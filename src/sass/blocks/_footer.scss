@@ -33,4 +33,13 @@
 
 		background: url(../img/bg-footer.jpg) center (center/cover) no-repeat;
 	}
+
+	&__menu {
+		@include reset-list;
+
+		a {
+			color: #ffffff;
+			text-decoration: none;
+		}
+	}
 }
