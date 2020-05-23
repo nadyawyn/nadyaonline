@@ -1,16 +1,23 @@
-//Smooth scroll and pageup
+$(document).ready(function () {
 
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 1200) {
-		$('.pageup').fadeIn('slow');
-	}
-	else {
-		$('.pageup').fadeOut('slow');
-	}
-});
+	//Smooth scroll and pageup
 
-$("a[href^='#up']").click(function () {
-	const _href = $(this).attr("href");
-	$("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
-	return false;
-});
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1200) {
+			$('.pageup').fadeIn('slow');
+		}
+		else {
+			$('.pageup').fadeOut('slow');
+		}
+	});
+
+	$("a[href^='#up']").click(function () {
+		const _href = $(this).attr("href");
+		$("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+		return false;
+	});
+
+	//Animation 
+	new WOW().init();
+
+});  
