@@ -11,8 +11,8 @@ $(document).ready(function () {
 		$(this).on('click', function () {
 			$('.overlay, .portfolio').fadeIn('slow');
 			$('.portfolio .portfolio__title').text($('.portfolio__item').eq(i).text());
-			$('.portfolio .portfolio__img').text($('.portfolio__item').eq(i).text());
-
+			//$('.portfolio #portfolio__img').text($('.portfolio__item').eq(i).text());
+			$('.portfolio #portfolio__img').addClass('works__list-item_' + (i + 1));
 
 			//$('.overlay, .portfolio').fadeIn('slow');
 		});
@@ -20,6 +20,7 @@ $(document).ready(function () {
 
 	$('.portfolio__close').on('click', function () {
 		$('.overlay, .portfolio').fadeOut('slow');
+		$('.portfolio #portfolio__img').removeClass();
 	});
 	/* 
 		$('.modal__close').on('click', function () {
