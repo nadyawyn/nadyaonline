@@ -2,19 +2,18 @@ $(document).ready(function () {
 
 	//Showcase
 
-	/* 	$('[data-portfolio=showcase]').on('click', function () {
-			$('.overlay, .portfolio').fadeIn('slow');
-			$('#pi2').fadeIn('slow');
-		}); */
-
 	$('.works__list-item').each(function (i) {
 		$(this).on('click', function () {
 			$('.overlay, .portfolio').fadeIn('slow');
-			$('.portfolio .portfolio__title').text($('.portfolio__item').eq(i).text());
-			//$('.portfolio #portfolio__img').text($('.portfolio__item').eq(i).text());
+			$('.portfolio__project-name').text($('.portfolio__item-name').eq(i).text());
+			$('.portfolio__project-dates').text($('.portfolio__item-dates').eq(i).text());
+			$('.portfolio__project-desc').text($('.portfolio__item-desc').eq(i).text());
+			$('.portolio__stack-desc').text($('.portfolio__item-stack').eq(i).text());
+
+			$('.portfolio__link .button').attr('href', $('.portfolio__item-link').eq(i).text());
+
 			$('.portfolio #portfolio__img').addClass('works__list-item_' + (i + 1));
 
-			//$('.overlay, .portfolio').fadeIn('slow');
 		});
 	});
 
@@ -22,18 +21,7 @@ $(document).ready(function () {
 		$('.overlay, .portfolio').fadeOut('slow');
 		$('.portfolio #portfolio__img').removeClass();
 	});
-	/* 
-		$('.modal__close').on('click', function () {
-			$('.overlay, #consultation, #order, #thanks').fadeOut('slow');
-		});
-	
-		$('.button_mini').each(function (i) {
-			$(this).on('click', function () {
-				$('#order .modal__description').text($('.catalog-item__subtitle').eq(i).text());
-				$('.overlay, #order').fadeIn('slow');
-			});
-		});
-	 */
+
 	//Smooth scroll and pageup
 
 	$(window).scroll(function () {
