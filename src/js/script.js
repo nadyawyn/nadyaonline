@@ -1,5 +1,38 @@
 $(document).ready(function () {
 
+	//Showcase
+
+	/* 	$('[data-portfolio=showcase]').on('click', function () {
+			$('.overlay, .portfolio').fadeIn('slow');
+			$('#pi2').fadeIn('slow');
+		}); */
+
+	$('.works__list-item').each(function (i) {
+		$(this).on('click', function () {
+			$('.overlay, .portfolio').fadeIn('slow');
+			$('.portfolio .portfolio__title').text($('.portfolio__item').eq(i).text());
+			$('.portfolio .portfolio__img').text($('.portfolio__item').eq(i).text());
+
+
+			//$('.overlay, .portfolio').fadeIn('slow');
+		});
+	});
+
+	$('.portfolio__close').on('click', function () {
+		$('.overlay, .portfolio').fadeOut('slow');
+	});
+	/* 
+		$('.modal__close').on('click', function () {
+			$('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+		});
+	
+		$('.button_mini').each(function (i) {
+			$(this).on('click', function () {
+				$('#order .modal__description').text($('.catalog-item__subtitle').eq(i).text());
+				$('.overlay, #order').fadeIn('slow');
+			});
+		});
+	 */
 	//Smooth scroll and pageup
 
 	$(window).scroll(function () {
