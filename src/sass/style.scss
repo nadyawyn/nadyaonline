@@ -3,6 +3,7 @@
 @import "base/mixins";
 @import "base/variables";
 
+
 .container {
 	margin: 0 auto;
 	width: 1170px;
@@ -12,6 +13,10 @@
 	/* outline: 1px solid red; */
 }
 
+@import "blocks/buttons";
 @import "blocks/header";
 @import "blocks/main";
 @import "blocks/works";
+@import "blocks/decor";
+@import "blocks/cooperation";
+@import "blocks/footer";

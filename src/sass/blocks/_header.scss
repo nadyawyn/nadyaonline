@@ -1,5 +1,5 @@
 .header {
-	height: 600px;
+	height: 545px;
 	padding-top: 100px;
 	background: url(../../img/bg-top.jpg) center (center/cover) no-repeat;
 
@@ -36,7 +36,7 @@
 
 	&__tags {
 		@include reset-list;
-		width: 600px;
+		width: 700px;
 		font-size: 22px;
 
 		display: flex;

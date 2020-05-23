@@ -1,0 +1,13 @@
+.decor {
+	margin-top: -20px;
+
+	background: url(../../img/bg-mid.jpg) center (center/cover) no-repeat;
+
+	background-position: 0 -10px;
+
+	height: 850px;
+	&__overlay_top {
+		height: 210px;
+		background: url(../img/bg-over-bottom.svg) center (center/cover) no-repeat;
+	}
+}

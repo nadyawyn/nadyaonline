@@ -1,0 +1,36 @@
+.footer {
+	height: 800px;
+
+	background: radial-gradient(circle, rgb(110, 110, 110) 0%, rgb(63, 63, 63) 100%);
+
+	color: #ffffff;
+
+	&__overlay_top {
+		height: 300px;
+		background: url(../img/bg-over-top2.svg) center (center/cover) no-repeat;
+	}
+
+	&__wrapper {
+		width: 100%;
+
+		margin-top: -50px;
+
+		display: flex;
+
+		flex-flow: row nowrap;
+
+		justify-content: space-between;
+	}
+	&__info {
+		padding-top: 40px;
+
+		font-size: 24px;
+	}
+	&__img {
+		width: 400px;
+		height: 400px;
+		border-radius: 100%;
+
+		background: url(../img/bg-footer.jpg) center (center/cover) no-repeat;
+	}
+}
