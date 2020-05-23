@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	<header class="header">
+	<header class="header" id="up">
 		<div class="container">
 			<div class="header__wrapper">
 				<div class="header__photo"></div>
@@ -36,11 +36,10 @@
 			
 		</div>
 	</header>
-
-	<main class="main">
-		<div class="main__overlay_top">
-		</div>
+	<main>
 		<section class="works">
+			<div class="works__overlay_top">
+			</div>
 				<h2 class="works__title">
 					my WORKS
 				</h2>
@@ -93,40 +92,44 @@
 			</div>
 			
 		</section>
-		<footer class="footer">
-			<div class="footer__overlay_top">
-				<div class="container">
-					<button class="button">Contact me</button>
-
-				</div>
-			</div>
-			<div class="container">
-				<div class="footer__wrapper">
-				<div class="footer__info">
-					<p>2020 (c) Nadya Podkurkova</p>
-					<p>my profile at GitHub
-
-						mail@nadyaonline.ru
-						
-					</p>
-					<ul class="footer__menu">
-						<li><a href="#">Link 1</a></li>
-						<li><a href="#">Link 2</a></li>
-						<li><a href="#">Link 3</a></li>
-					</ul>
-				</div>
-				<div class="footer__img">
-
-				</div>
-			</div>
-			</div>
-			
-		</footer>
-		
-
-
 	</main>
+	<footer class="footer">
+		<div class="footer__overlay_top">
+			<div class="container">
+				<button class="button">Contact me</button>
 
+			</div>
+		</div>
+		<div class="container">
+			<div class="footer__wrapper">
+			<div class="footer__info">
+				<p>2020 (c) Nadya Podkurkova</p>
+				<p>my profile at GitHub
 
+					mail@nadyaonline.ru
+					
+				</p>
+				<ul class="footer__menu">
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+				</ul>
+			</div>
+			<div class="footer__img">
+
+			</div>
+		</div>
+		</div>
+		
+	</footer>
+
+	<a href="#up" class="pageup">
+		<img src="icons/up.svg" alt="up">
+	</a>
+
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<script src="js/script.js"></script>
 </body>
 </html>
