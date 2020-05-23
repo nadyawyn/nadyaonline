@@ -1,0 +1,18 @@
+.works {
+	transform: translateY(-425px);
+
+	&__title {
+		color: $maincolor;
+		text-align: center;
+		font-size: 70px;
+		font-weight: 300;
+
+		margin: 20px 0 40px 0;
+	}
+
+	&__subtitle {
+		color: $maincolor;
+		font-size: 36px;
+		font-weight: 300;
+	}
+}

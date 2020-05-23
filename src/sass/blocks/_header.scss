@@ -1,0 +1,55 @@
+.header {
+	height: 600px;
+	padding-top: 100px;
+	background: url(../../img/bg-top.jpg) center (center/cover) no-repeat;
+
+	color: #ffffff;
+
+	&__wrapper {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	&__photo {
+		width: 250px;
+		height: 250px;
+		border-radius: 100%;
+
+		background: url(../../img/me.jpg) center (center/cover) no-repeat;
+		background-position: 0 -10px;
+	}
+
+	&__text {
+		margin-left: 100px;
+	}
+
+	&__title {
+		margin: 0 0 100px 0;
+		font-size: 70px;
+		font-weight: 500;
+
+		span {
+			display: block;
+			font-size: 40px;
+		}
+	}
+
+	&__tags {
+		@include reset-list;
+		width: 600px;
+		font-size: 22px;
+
+		display: flex;
+		flex-flow: row wrap;
+
+		&-item {
+			margin-right: 30px;
+			line-height: 40px;
+		}
+
+		a {
+			color: #ffffff;
+			text-decoration: none;
+		}
+	}
+}

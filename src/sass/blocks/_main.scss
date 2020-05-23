@@ -1,0 +1,9 @@
+.main {
+	&__overlay {
+		width: 100%;
+		height: 300px;
+		background: url(../img/bg-over-top.svg) center (center/cover) no-repeat;
+
+		transform: translateY(-100%);
+	}
+}
