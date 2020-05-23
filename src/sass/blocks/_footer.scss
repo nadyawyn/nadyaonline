@@ -1,19 +1,28 @@
 .footer {
 	height: 800px;
 
-	background: radial-gradient(circle, rgb(110, 110, 110) 0%, rgb(63, 63, 63) 100%);
-
+	// background: radial-gradient(circle, rgb(110, 110, 110) 0%, rgb(63, 63, 63) 100%);
+	background-color: #464646;
 	color: #ffffff;
+
+	position: relative;
 
 	&__overlay_top {
 		height: 300px;
 		background: url(../img/bg-over-top2.svg) center (center/cover) no-repeat;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 9;
 	}
 
 	&__wrapper {
 		width: 100%;
 
-		margin-top: -50px;
+		margin-top: -10px;
+		padding-top: 250px;
 
 		display: flex;
 

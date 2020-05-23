@@ -1,5 +1,7 @@
 .cooperation {
+	position: relative;
 	margin-top: -250px;
+	padding-top: 250px;
 
 	font-size: 22px;
 	letter-spacing: 1.2px;
@@ -8,6 +10,12 @@
 	&__overlay_top {
 		height: 250px;
 		background: url(../img/bg-over-top.svg) center (center/cover) no-repeat;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 5;
 	}
 
 	&__title {
@@ -19,5 +27,21 @@
 
 	&__text {
 		margin: 40px 0;
+	}
+
+	.container {
+		position: relative;
+		min-height: 320px;
+	}
+
+	&__wrapper {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		min-height: 400px;
+		z-index: 7;
+
+		padding: 0 15px;
 	}
 }
