@@ -5,7 +5,9 @@
 @import "base/variables";
 @import "base/anim";
 
-
+* {
+	box-sizing: border-box;
+}
 .container {
 	margin: 0 auto;
 	width: 1170px;
@@ -14,6 +16,7 @@
 
 	/* outline: 1px solid red; */
 }
+
 
 @import "blocks/buttons";
 @import "blocks/header";
@@ -24,3 +27,5 @@
 @import "blocks/footer";
 @import "blocks/portfolio";
 @import "blocks/pageup";
+
+@import "base/media";

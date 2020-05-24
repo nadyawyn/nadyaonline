@@ -9,6 +9,10 @@
 	cursor: pointer;
 	padding: 10px;
 
+	&:hover {
+		background-color: $maincolor_hl;
+	}
+
 	&_animated {
 		&:hover {
 			animation: buttonScaleUp 1s ease-in-out 1;
