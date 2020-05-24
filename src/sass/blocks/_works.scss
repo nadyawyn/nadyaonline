@@ -1,12 +1,22 @@
 .works {
 
-	&__overlay {
+	&__overlay_top {
 		width: 100%;
-		&_top {	
-			height: 300px;
-			background: url(../img/bg-over-top.svg) center (center/cover) no-repeat;
-			
+		
+		height: 300px;
+		background: url(../img/bg-over-top.svg) center (center/cover) no-repeat;
+		
+		.container {
+			position: relative;
+			.button {
+				position: absolute;
+				top: 130px;
+				right: 15px;
+			}
+		
 		}
+		
+		
 		
 	}
 	
@@ -18,7 +28,7 @@
 		font-size: 70px;
 		font-weight: 300;
 
-		margin: -100px 0 40px 0;
+		margin: -93px 0 40px 0;
 	}
 
 	&__subtitle {
