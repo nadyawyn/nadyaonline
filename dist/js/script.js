@@ -22,6 +22,21 @@ $(document).ready(function () {
 		$('.portfolio #portfolio__img').removeClass();
 	});
 
+	$(this).keydown(function (eventObject) {
+		if (eventObject.which == 27)
+			$('.overlay, .portfolio').fadeOut('slow');
+		$('.portfolio #portfolio__img').removeClass();
+	});
+
+	$(document).mouseup(function (e) { // событие клика по веб-документу
+		const div = $(".portfolio"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+			&& div.has(e.target).length === 0) { // и не по его дочерним элементам
+			$('.overlay, .portfolio').fadeOut('slow');
+			$('.portfolio #portfolio__img').removeClass();
+		}
+	});
+
 	//Smooth scroll and pageup
 
 	$(window).scroll(function () {
