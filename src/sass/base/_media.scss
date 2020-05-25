@@ -12,12 +12,15 @@
 
 		&__text {
 			margin-left: 66px;
-			p {
-				font-size: 18px;
-			}
+		}
+		&__desc {
+			font-size: 18px;
 		}
 		&__wrapper {
 			justify-content: space-evenly;
+		}
+		&__button-contact {
+			right: 47px;
 		}
 	}
 	.works {
@@ -26,13 +29,6 @@
 		}
 		&__subtitle {
 			font-size: 32px;
-		}
-		&__overlay_top {
-			.container {
-				.button {
-					right: 47px;
-				}
-			}
 		}
 	}
 	.portfolio {
@@ -146,17 +142,13 @@
 				font-size: 30px;
 			}
 		}
+		&__button-contact {
+			top: 146px;
+					right: 25px;
+		}
 	}
 
 	.works {
-		&__overlay_top {
-			.container {
-				.button {
-					top: 146px;
-					right: 25px;
-				}
-			}
-		}
 		&__title {
 			font-size: 56px;
 		}
@@ -165,6 +157,12 @@
 				width: 355px;
 				margin-bottom: 20px;				
 			}
+		}
+	}
+
+	.footer {
+		&__overlay_top {
+			top: -2px;
 		}
 	}
 
@@ -180,6 +178,9 @@
 		&__photo {
 			display: none;
 		}
+		&__button-contact {
+			top: 155px;
+		}
 	}
 
 	.works {
@@ -189,13 +190,7 @@
 				margin-bottom: 0;				
 			}
 		}
-		&__overlay_top {
-			.container {
-				.button {
-					top: 155px;
-				}
-			}
-		}
+		
 		&__title {
 			margin-top: -72px;
 			margin-bottom: 25px;
@@ -223,6 +218,20 @@
 			flex-flow: row wrap;
 		}
 	}
+	.pageup {
+		width: 50px;
+		height: 50px;
+	}
+}
+@media (max-width: $tablet-width_min) {
+	.works {
+		&__list {
+			&-item {
+				width: 268px;
+				height: 147px;
+			}
+		}
+	}
 }
 
 @media (max-width: $mobile-width) {
@@ -232,9 +241,9 @@
 		
 		&__text {
 			margin-left: 0;
-			p {
-				font-size: 18px;
-			}
+		}
+		&__desc {
+			font-size: 16px;
 		}
 		&__title {
 			font-size: 40px;
@@ -242,16 +251,18 @@
 				font-size: 24px;
 			}
 		}
+		&__button-contact {
+			top: 160px;
+		}
 	}
 	.works {
 		&__title {
 			margin-top: -62px;
 		}
-		&__overlay_top {
-			.container {
-				.button {
-					top: 160px;
-				}
+		&__list {
+			&-item {
+				width: 100%;
+				height: 250px;
 			}
 		}
 	}
@@ -273,6 +284,9 @@
 		}
 		&__wrapper {
 			padding-top: 130px;
+		}
+		&__img {
+			margin-top: 20px;
 		}
 	}
 }
@@ -306,17 +320,21 @@
 			position: relative;
 			
 			padding-right: 10px;
-
-			p {
-				font-size: 16px;
-			}
 		}
 		&__desc {
+			font-size: 16px;
 			position: absolute;
 			top:170px;
 			left: 0;
 			z-index: 100;
 			color: #666666;
+		}
+
+		&__button-contact {
+			top: 506px;
+			right: 50%;
+			transform: translateX(50%);
+			height: 50px;
 		}
 	}
 	.works {
@@ -325,12 +343,6 @@
 
 			.container {
 				.button {
-					top: 535px;
-					right: 50%;
-					transform: translateX(50%);
-
-					height: 50px;
-
 					&_animated {
 						&:hover {
 							animation: none;
@@ -341,12 +353,37 @@
 		}
 
 		&__title {
-			margin: 115px 0 0 0;
+			margin: 99px 0 20px 0;
 			font-size: 50px;
+		}
+		&__subtitle {
+			font-size: 24px;
 		}
 	}
 	.cooperation {
 		font-size: 16px;
 		min-height: 650px;
+
+		&__text {
+			margin-top: 25px;
+		}
+		&__wrapper {
+			padding: 0 20px;
+		}
+	}
+	.footer {
+		&__overlay_top {
+			top:-24px;
+			.container {
+				text-align: center;
+			}
+		}
+		&__wrapper {
+			padding-top: 80px;
+		}
+		&__img {
+			width: 200px;
+			height: 200px;
+		}
 	}
 }
