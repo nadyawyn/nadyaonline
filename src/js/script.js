@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 			$('.portfolio__link .button').attr('href', $('.portfolio__item-link').eq(i).text());
 
-			$('.portfolio #portfolio__img').addClass('works__list-item_' + (i + 1));
+			$('.portfolio #portfolio__img').addClass('works__list-item_x' + (i + 1));
 
 		});
 	});

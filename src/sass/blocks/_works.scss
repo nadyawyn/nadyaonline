@@ -53,38 +53,66 @@
 			&_sh {
 				display: block;
 				width: 350px;
-				height: 200px;
+				height: 250px;
 				margin-bottom: 40px;
 
 				cursor: pointer;
 				box-shadow: 0 0 20px rgba($color: #000000, $alpha: .3);
 			}
 			&_1 {
+				background: url(../img/works/businesstravel.jpg) center (left/contain) no-repeat;
+				background-size: 140%;
+			}
+			&_x1 {
 				background: url(../img/works/businesstravel.jpg) center (center/contain) no-repeat;
+				background-size: 100%;
 			}
 			&_2 {
+				background: url(../img/works/blogstandard.jpg) center (left/contain) no-repeat;
+				background-size: 140%;
+			}
+			&_x2 {
 				background: url(../img/works/blogstandard.jpg) center (center/contain) no-repeat;
+				background-size: 100%;
+			}
+
+			&_x {
+				background: url(../img/works/pulse.jpg) center (left/contain) no-repeat;
+				background-size: 140%;
 			}
 			&_3 {
-				background: url(../img/works/pulse.jpg) center (center/contain) no-repeat;
+				background: url(../img/works/mcash.jpg) center (left/contain) no-repeat;
+				background-size: 140%;
 			}
-			&_4 {
+			&_x3 {
 				background: url(../img/works/mcash.jpg) center (center/contain) no-repeat;
+				background-size: 100%;
 			}
-			&_5 {
+
+			&_4 {
+				background: url(../img/works/uber.jpg) center (left/contain) no-repeat;
+				background-size: 140%;
+			}
+			&_x4 {
 				background: url(../img/works/uber.jpg) center (center/contain) no-repeat;
+				background-size: 100%;
 			}
 			
 			&_sh_1 {
 				background: url(../img/works/sh1.jpg) center (center/contain) no-repeat;
+				background-size: 130%;
 			}
 
 		}
 	}
-
+	&__wp-sites {
+		background-color: #555555;
+		padding: 20px 0 40px 0;
+	}
 	&__shopify-themes {
 		background-color: #c9c9c9;
 		padding-top: 2px;
+		margin-top: -20px;
 		.works__subtitle {
 			color: #ffffff;
 			font-size: 48px;
