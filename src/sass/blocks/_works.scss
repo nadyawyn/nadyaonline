@@ -45,7 +45,8 @@
 			display: block;
 			width: 350px;
 			height: 200px;
-			background-color: #cccccc;
+			//background-color: #cccccc;
+			background-color: #fff;
 
 			margin-bottom: 40px;
 
@@ -119,6 +120,14 @@
 			}
 			&_x7 {
 				background: url(../img/works/freshfooddelivery.jpg) center (center/contain) no-repeat;
+				background-size: 100%;
+			}
+			&_8 {
+				background: url(../img/works/organicfood.jpg) center (left/contain) no-repeat;
+				background-size: 140%;
+			}
+			&_x8 {
+				background: url(../img/works/organicfood.jpg) center (center/contain) no-repeat;
 				background-size: 100%;
 			}
 			
