@@ -1,4 +1,13 @@
 $(document).ready(function () {
+	//Contact me
+
+	$('.header__button-contact').on('click', function () {
+		$('.overlay').fadeIn('slow');
+		$('.contact').slideDown('slow');
+	});
+	$('.contact__close').on('click', function () {
+		$('.overlay, .contact').fadeOut('slow');
+	});
 
 	//Showcase - General
 
@@ -30,9 +39,9 @@ $(document).ready(function () {
 
 	$(document).mouseup(function (e) { // событие клика по веб-документу
 		const div = $(".portfolio"); // тут указываем ID элемента
-		if (!div.is(e.target) // если клик был не по нашему блоку
-			&& div.has(e.target).length === 0) { // и не по его дочерним элементам
-			$('.overlay, .portfolio').fadeOut('slow');
+		const div1 = $(".contact");
+		if (!div.is(e.target) && !div1.is(e.target) && div.has(e.target).length === 0 && div1.has(e.target).length === 0) { // и не по его дочерним элементам
+			$('.overlay, .portfolio, .contact').fadeOut('slow');
 			$('.portfolio #portfolio__img').removeClass();
 		}
 	});
