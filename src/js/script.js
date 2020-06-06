@@ -5,6 +5,10 @@ $(document).ready(function () {
 		$('.overlay').fadeIn('slow');
 		$('.contact').slideDown('slow');
 	});
+	$('.cooperation__button-contact').on('click', function () {
+		$('.overlay').fadeIn('slow');
+		$('.contact').slideDown('slow');
+	});
 	$('.contact__close').on('click', function () {
 		$('.overlay, .contact').fadeOut('slow');
 	});
@@ -88,5 +92,23 @@ $(document).ready(function () {
 
 	//Animation 
 	new WOW().init();
+
+	//AJAX
+
+	$('form').submit(function (e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function () {
+			$(this).find("input").val("");
+			$('.contact').fadeOut();
+			$('.overlay, .thanks').fadeIn('slow');
+
+			$('form').trigger('reset');
+		});
+		return false;
+	});
 
 });  
