@@ -25,9 +25,10 @@ $(document).ready(function () {
 			// $('.portfolio__project-desc').text($('.portfolio__item-desc').eq(i).text());
 			$('.portfolio__project-desc').text($(this).children('.works__pf-content').children('.works__project-description').text());
 			// $('.portolio__stack-desc').text($('.portfolio__item-stack').eq(i).text());
-			$('.portolio__stack-desc').text($(this).children('.works__pf-content').children('.works__project-stack').text());
+			$('.portolio__project-stack').text($(this).children('.works__pf-content').children('.works__project-stack').text());
+			$('.portfolio__direction').text($(this).children('.works__pf-content').children('.works__project-direction').text());
 			// $('.portfolio__link .button').attr('href', $('.portfolio__item-link').eq(i).text());
-			$('.portfolio__link .button').attr('href', $(this).children('.works__pf-content').children('.works__project-link').text());
+			$('.portfolio__project-link .button').attr('href', $(this).children('.works__pf-content').children('.works__project-link').text());
 			// $('.portfolio #portfolio__img').addClass('works__list-item_x' + (i + 1));
 			$('.portfolio #portfolio__img').attr('src', $(this).children('.works__pf-content').children('.works__project-img').text());
 		});
