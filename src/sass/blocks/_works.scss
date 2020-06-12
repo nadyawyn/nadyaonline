@@ -8,6 +8,7 @@
 		
 		.container {
 			position: relative;
+			
 		}
 		
 		
@@ -39,7 +40,7 @@
 		display: flex;
 		flex-flow: row wrap;
 
-		justify-content: space-between;
+		justify-content: flex-start;
 
 		&-item {
 			display: block;
@@ -48,7 +49,7 @@
 			//background-color: #cccccc;
 			background-color: #fff;  
 
-			margin-bottom: 40px;
+			margin: 0 10px 40px 10px;
 
 			cursor: pointer;
 			&_sh {
@@ -138,14 +139,14 @@
 
 		}
 	}
-	&__wp-sites {
+	&__p2 {
 		background-color: #555555;
 		padding: 20px 0 40px 0;
 	}
-	&__shopify-themes {
+	&__p3 {
 		background-color: #c9c9c9;
 		padding-top: 2px;
-		margin-top: -20px;
+		margin-top: 0;
 		.works__subtitle {
 			color: #ffffff;
 			font-size: 48px;
@@ -155,4 +156,7 @@
 		}
 	}
 
+	&__pf-content {
+		display: none;
+	}
 }

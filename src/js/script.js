@@ -18,15 +18,18 @@ $(document).ready(function () {
 	$('.works__list-item').each(function (i) {
 		$(this).on('click', function () {
 			$('.overlay, .portfolio').fadeIn('slow');
-			$('.portfolio__project-name').text($('.portfolio__item-name').eq(i).text());
-			$('.portfolio__project-dates').text($('.portfolio__item-dates').eq(i).text());
-			$('.portfolio__project-desc').text($('.portfolio__item-desc').eq(i).text());
-			$('.portolio__stack-desc').text($('.portfolio__item-stack').eq(i).text());
-
-			$('.portfolio__link .button').attr('href', $('.portfolio__item-link').eq(i).text());
-
-			$('.portfolio #portfolio__img').addClass('works__list-item_x' + (i + 1));
-
+			// $('.portfolio__project-name').text($('.portfolio__item-name').eq(i).text());
+			$('.portfolio__project-name').text($(this).children('.works__pf-content').children('.works__project-name').text());
+			// $('.portfolio__project-dates').text($('.portfolio__item-dates').eq(i).text());
+			$('.portfolio__project-dates').text($(this).children('.works__pf-content').children('.works__project-dates').text());
+			// $('.portfolio__project-desc').text($('.portfolio__item-desc').eq(i).text());
+			$('.portfolio__project-desc').text($(this).children('.works__pf-content').children('.works__project-description').text());
+			// $('.portolio__stack-desc').text($('.portfolio__item-stack').eq(i).text());
+			$('.portolio__stack-desc').text($(this).children('.works__pf-content').children('.works__project-stack').text());
+			// $('.portfolio__link .button').attr('href', $('.portfolio__item-link').eq(i).text());
+			$('.portfolio__link .button').attr('href', $(this).children('.works__pf-content').children('.works__project-link').text());
+			// $('.portfolio #portfolio__img').addClass('works__list-item_x' + (i + 1));
+			$('.portfolio #portfolio__img').attr('src', $(this).children('.works__pf-content').children('.works__project-img').text());
 		});
 	});
 
@@ -49,29 +52,6 @@ $(document).ready(function () {
 			$('.portfolio #portfolio__img').removeClass();
 		}
 	});
-
-	//Showcase - Shopify
-
-	$('.works__list-item_sh').each(function (i) {
-		$(this).on('click', function () {
-			$('.overlay, .portfolio_sh').fadeIn('slow');
-			/*  $('.portfolio__project-name').text($('.portfolio__item-name').eq(i).text());
-			$('.portfolio__project-dates').text($('.portfolio__item-dates').eq(i).text());
-			$('.portfolio__project-desc').text($('.portfolio__item-desc').eq(i).text());
-			$('.portolio__stack-desc').text($('.portfolio__item-stack').eq(i).text());
-
-			$('.portfolio__link .button').attr('href', $('.portfolio__item-link').eq(i).text());
-
-			$('.portfolio #portfolio__img').addClass('works__list-item_' + (i + 1));  */
-
-		});
-	});
-
-	/* $('.portfolio__close_sh').on('click', function () {
-		$('.overlay, .portfolio_sh').fadeOut('slow');
-		$('.portfolio #portfolio__img').removeClass();
-	}); */
-
 
 	//Smooth scroll and pageup
 

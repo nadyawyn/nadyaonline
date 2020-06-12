@@ -86,6 +86,14 @@
 	}
 }
 
+@media (max-width: 1159px) {
+.works {
+	&__list {
+		justify-content: space-around;
+	}
+}
+}
+
 @media (max-width: $middle-width) {
 	
 	.header {
@@ -114,7 +122,7 @@
 
 			&-item {
 				width: 325px;
-				margin-bottom: 0;
+				margin-bottom: 20px;
 			}
 		}
 
@@ -237,7 +245,7 @@
 		&__list {
 			&-item {
 				width: 325px;
-				margin-bottom: 0;				
+				margin-bottom: 20px;				
 			}
 		}
 		
@@ -343,6 +351,7 @@
 				height: 250px;
 			}
 		}
+		
 	}
 	.cooperation {
 		font-size: 18px;
