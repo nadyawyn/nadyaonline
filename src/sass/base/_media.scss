@@ -299,6 +299,18 @@
 	#portfolio__img {
 		height: 470px;
 	}
+	.contact {
+		width: 100%;
+		&__input {
+			&-wrapper {
+				width: 100%;
+				margin: 50px auto;
+				padding: 20px;
+				display: flex;
+				flex-flow: column nowrap;
+			}
+		}
+	}
 }
 @media (max-width: $tablet-width_min) {
 	.works {
